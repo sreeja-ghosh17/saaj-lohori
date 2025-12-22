@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #fff1f6, #fff8e6);
+    color: #333;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #cfa14a, #ff4f81);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Logo */
+.logo-circle {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin: 0 auto 15px;
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Headings */
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+}
+
+h1 {
+    margin: 10px 0;
+}
+
+h2 {
+    color: #cfa14a;
+}
+
+/* Navigation */
+nav {
+    background: white;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 14px;
+    text-decoration: none;
+    color: #ff4f81;
+    font-weight: 500;
+}
+
+/* Sections */
+section {
+    padding: 55px 20px;
+    text-align: center;
+}
+
+/* Profile Image */
+.profile-pic {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 5px solid #cfa14a;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* Services */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 12px 0;
+    font-size: 18px;
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 280px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* Button */
+button {
+    margin-top: 25px;
+    padding: 15px 40px;
+    background: linear-gradient(to right, #cfa14a, #ff4f81);
+    color: white;
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Footer */
+footer {
+    background: #cfa14a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .gallery img {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
