@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(
+        120deg,
+        #fff1f6,
+        #fdf4ff,
+        #fff8e6,
+        #e9f9f5
+    );
+    color: #333;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #cfa14a, #ff4f81, #8e44ad);
+    color: white;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+/* Logo */
+.logo-circle {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin: 0 auto 15px;
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Navigation */
+nav {
+    background: white;
+    padding: 12px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    margin: 0 14px;
+    text-decoration: none;
+    color: #ff4f81;
+    font-weight: 500;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+h2 {
+    color: #cfa14a;
+}
+
+/* Profile */
+.profile-pic {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 5px solid #cfa14a;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* Services */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 12px 0;
+    font-size: 18px;
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 280px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #25D366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.08);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .gallery img {
+        width: 90%;
+    }
+}
